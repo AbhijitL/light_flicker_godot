@@ -47,7 +47,7 @@ var flicker_string : String;
 export var custom_flicker_string : String = "IFCUSTOM";
 export var max_energy : float = 3;# max light_energy
 export var step_time = 500;# In ms
-export var dont_loop : bool = false;
+export var is_loop : bool = false;
 export var run_at_start : bool = true;
 
 var _cache : Array;
@@ -79,7 +79,7 @@ func flicker():
 			light_energy = _cache[_current_step];
 			_current_step +=1;
 			if _current_step == _cache.size():
-				if dont_loop != true:
+				if is_loop != true:
 					_current_step = 0;
 				else:
 					return;

@@ -12,9 +12,10 @@ material/0 = null
 
 [node name="ValveLight" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325179, 0 )
-default_light_style = 3
-custom_flicker_string = "IF CUSTOM"
-max_energy = 1.0
+default_light_style = 13
+custom_flicker_string = "abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+max_energy = 5.0
+step_time = 800
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.601163, 1.90097 )
