@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://valve_light.tscn" type="PackedScene" id=1]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[node name="World" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="ValveLight" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325179, 0 )
+default_light_style = 3
+custom_flicker_string = "IF CUSTOM"
+max_energy = 1.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.601163, 1.90097 )
