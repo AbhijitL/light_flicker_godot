@@ -21,6 +21,7 @@ enum STYLES {
 	FLUORESCENT_FLICKER
 	SLOW_PULSE_NOT_FADE_TO_BLACK
 	UNDERWATER_LIGHT_MUTATION
+	HAUNTED
 	CUSTOM
 };
 
@@ -37,7 +38,8 @@ const STYLE_STRINGS = [
 	"aaaaaaaazzzzzzzz",
 	"mmamammmmammamamaaamammma",
 	"abcdefghijklmnopqrrqponmlkjihgfedcba",
-	"mmnnmmnnnmmnn"
+	"mmnnmmnnnmmnn",
+	"aaaaaaabcdaaaaaaammmmmmnnnabcdaaaaaaaaaaaa"
 ];
 
 
